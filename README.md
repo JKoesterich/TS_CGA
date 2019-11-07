@@ -95,3 +95,12 @@ The program reads in the file and a string given, the string is used as a column
 The output file is the mutation file with the database information added to the end of the row.  
 The program adds column headers to the end of the header row and fills in the information for the mutations in those columns.  
 The program also adds a tag to the end of the file name and before the .txt extension to let the user know what type of information was added to the file.  
+
+
+## Running the test files  
+The following command will run the input file and gather all information from the rest of the information test files.  
+The information in these test files is a mix of real and simulated data, please do not assume data in these files are factual.  
+ `python Cand_Gene_MutGene_Pipeline.py --files ~/TS0096_Dominant_test.tsv --segpat ~/TS0096.reflist --anno annotation_hg19_testTS0096.vcf --genetol GeneTolerance_TS0096test.txt --disease Disease_assoc_TS0096test.txt TS_disease_keywords.txt --genes Gene_List_TS0096test.txt Gene_List --gtex GTEx_median_tpm_TS0096test.gct --output .`  
+
+ 
+ 
