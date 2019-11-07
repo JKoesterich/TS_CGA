@@ -1,0 +1,7 @@
+Rank	Gene	FullName	pLI	Found in Pathway	mRNA	Chr	Score	PValue	LOD_Score	LOD_PValue	Strand	#ofVar	VarType	VarScore	VarLODScore	VarPosition	nAllele	Ref	GenoType
+1	EBLN2	Homo sapiens endogenous Bornavirus-like nucleoprotein 2 (EBLN2) mRNA.	0.1	.	NM_018029.3	chr3	18.69	3.00E-04	0.9	5.00E-06	+	1	ins	14.55	0|0.90	73111503	NA	-|-	"2,5|-:TGG|-:W;0|TGG:TGG|W:W"
+2	POLG	Homo sapiens polymerase (DNA directed) gamma (POLG) transcript variant 1 mRNA.	0	.	NM_001126131.1	chr15	20.08	4.00E-04	0.9	5.00E-06	-	1	mnp	15.94	0|0.90	89876828	NA	TGCTGC|QQQ	"0|TGC:TGCTGCTGC|QQ:QQQQ;3-4|TGC:TGCTGC|QQ:QQQ;2,5|TGCTGC:TGCTGCTGC|QQQ:QQQQ"
+3	KRTAP1-3	Homo sapiens keratin associated protein 1-3 (KRTAP1-3) mRNA.	0.7	.	NM_030966.1	chr17	12.27	2.00E-03	0.9	2.00E-05	-	1	SNP	8.13	0|0.90	39191027	4	G|T	B|0-4|A:G|I:T
+4	SCN10A	Homo sapiens sodium channel voltage-gated type X alpha subunit (SCN10A) mRNA.	0	Neurological system process;Sodium Channel;Ion channel activity	NM_006514.2	chr3	15.23	6.00E-03	0.6	1.00E-02	-	1	SNP	12.48	0|0.60	38797296	NA	A|Y	"N|0,2-3|A:G|Y:H;N|4|^:^|^:^"
+5	MOGAT3	Homo sapiens monoacylglycerol O-acyltransferase 3 (MOGAT3) mRNA.	0	.	NM_178176.2	chr7	6.08	7.00E-03	0.9	8.00E-05	-	1	SNP	1.94	0|0.90	100839291	12	T|Q	"B|0,2-5|A:T|L:Q"
+6	PLB1	Homo sapiens phospholipase B1 (PLB1) transcript variant 1 mRNA.	0	.	NM_153021.4	chr2	7.7	2.00E-02	0.23	1.00E-02	+	1	SNP	6.62	0|0.23	28825724	31	A|N	B|2-4|A:T|N:Y

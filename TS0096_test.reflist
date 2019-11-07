@@ -1,0 +1,7 @@
+##VAAST-INDEX	PED_FILE	PED_ID	CDR_FILE	CDR_ID	AFFECTED_STATUS
+0	TS0096.ped	10000-extracted.vat.gvf	TS0096.cdr	0	Unaff
+1	TS0096.ped	20000-extracted.vat.gvf	TS0096.cdr	1	Unaff
+2	TS0096.ped	30000-extracted.vat.gvf	TS0096.cdr	2	Aff
+3	TS0096.ped	40000-extracted.vat.gvf	TS0096.cdr	3	Aff
+4	TS0096.ped	50000-extracted.vat.gvf	TS0096.cdr	4	Aff
+5	TS0096.ped	60000-extracted.vat.gvf	TS0096.cdr	5	Unaff

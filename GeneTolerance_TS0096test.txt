@@ -1,0 +1,9 @@
+Symbol	mis_z	lof_z	pLI	GDI	Gene Cards	KEGG
+EBLN2	-2.364625922	1.090098868	0.086523004	1890.42342	https://www.genecards.org/cgi-bin/carddisp.pl?gene=EBLN2&keywords=EBLN2	https://www.kegg.jp/kegg-bin/search_pathway_text?map=hsa&keyword=55096 (EBLN2)&mode=1&viewImage=true
+PAPOLG	1.810171296	5.077927642	0.989888395	33.48625	https://www.genecards.org/cgi-bin/carddisp.pl?gene=PAPOLG&keywords=PAPOLG	https://www.kegg.jp/kegg-bin/search_pathway_text?map=hsa&keyword=64895 (PAPOLG)&mode=1&viewImage=true
+POLG	-0.15958278	4.265011384	4.1245E-05	540.1607	https://www.genecards.org/cgi-bin/carddisp.pl?gene=POLG&keywords=POLG	https://www.kegg.jp/kegg-bin/search_pathway_text?map=hsa&keyword=5428 (POLG)&mode=1&viewImage=true
+POLG2	-0.25063654	1.700514831	2.15964E-06	2981.32808	https://www.genecards.org/cgi-bin/carddisp.pl?gene=POLG2&keywords=POLG2	https://www.kegg.jp/kegg-bin/search_pathway_text?map=hsa&keyword=11232 (POLG2)&mode=1&viewImage=true
+KRTAP1-3	0.314965132	1.76465537	0.653995931	399.50943	https://www.genecards.org/cgi-bin/carddisp.pl?gene=KRTAP1-3&keywords=KRTAP1-3	https://www.kegg.jp/kegg-bin/search_pathway_text?map=hsa&keyword=81850 (KRTAP1-3)&mode=1&viewImage=true
+SCN10A	-2.005248258	1.566204276	6.14215E-26	1695.64989	https://www.genecards.org/cgi-bin/carddisp.pl?gene=SCN10A&keywords=SCN10A	https://www.kegg.jp/kegg-bin/search_pathway_text?map=hsa&keyword=6336 (SCN10A)&mode=1&viewImage=true
+MOGAT3	0.030425004	-1.0078803	2.40336E-10	360.93757	https://www.genecards.org/cgi-bin/carddisp.pl?gene=MOGAT3&keywords=MOGAT3	https://www.kegg.jp/kegg-bin/search_pathway_text?map=hsa&keyword=346606 (MOGAT3)&mode=1&viewImage=true
+PLB1	-2.333916368	-0.422953899	1.99315E-56	3555.80975	https://www.genecards.org/cgi-bin/carddisp.pl?gene=PLB1&keywords=PLB1	https://www.kegg.jp/kegg-bin/search_pathway_text?map=hsa&keyword=151056 (PLB1)&mode=1&viewImage=true
