@@ -3,9 +3,11 @@ This repository holds the script that gathers information on mutations and genes
 
 ## Running the program  
 The program is run on the command line as such, `python Cand_Gene_MutGene_Pipeline.py --parameter_1 <file_1> --parameter_2 <file_2> etc.`  
+More information is present in running the test files.  
+
 ### Available parameters  
-* `--files/-f` - This reads in the mutation files. The files can be called explicitly or if they are the only items in a folder they can be called as `--files path/files/*`.
-* `--output/-o` - This reads in a directory in which all the output files will be written to.
+* `--files/-f` - This reads in the mutation files. The files can be called explicitly or if they are the only items in a folder they can be called as `--files path/files/*`. **This parameter is required.**  
+* `--output/-o` - This reads in a directory in which all the output files will be written to. **This parameter is required.**   
 * `--anno/-a` - This reads in the annotated vcf file to get annovar information on the mutations.  
 * `--gtex/-g` - This reads in the GTEx mediam tpm file
 * `--disease/-d` - This reads in up to 2 files, the first file has the gene names and the disease associations and the second file is a list of keywords used to filter the diseases.  
@@ -13,16 +15,22 @@ The program is run on the command line as such, `python Cand_Gene_MutGene_Pipeli
 * `--genetol/-t` - This reads in the gene tolerance score file.  
 * `--genes/-e` - This reads in sets of 2. The first element is a newline delimited file of gene names and the second element is the column header that is added to the mutation file
 
+Aside from the required parameters, all other parameters are optional and any combination of parameters can be run.  
+Depending on the parameter run, different columns are required in the input files that are specified in --files.  
+* --anno requires the columns: Chr, VarType, and VarPosition
+* --segpat requires the file name to be specific (see details below) in addition to the column: Genotype
+* all other parameters require the column: Gene  
+
 More information on parameters can be found below.  
 
 
 ## Types of input files     
 ### Mutation file `--files/-f`  
 This is a tab delimited file that would contain any of the following information:  
-* Mutation position  
-* Type of mutation: ins, del, snp, or mnp
-* Gene that the mutation is found in  
-* Segregation pattern of the mutation if running pedigree analysis  
+* Mutation position (defined in the Chr and VarPosition columns)  
+* Type of mutation: ins, del, snp, or mnp (defined in the VarType column)  
+* Gene that the mutation is found in (defined in the Gene column)  
+* Segregation pattern of the mutation if running pedigree analysis (defined in the Genotype column)  
 
 Multiple mutation files can be run at once by specifying them on the command line explicitly or running a folder of mutation files with the `folder/path/*` notation on the command line.  
 Mutation files are named by the family and the inheritance pattern if pedigree information is being run. Ex. Family1_Dominant.txt
@@ -100,7 +108,10 @@ The program also adds a tag to the end of the file name and before the .txt exte
 ## Running the test files  
 The following command will run the input file and gather all information from the rest of the information test files.  
 The information in these test files is a mix of real and simulated data, please do not assume data in these files are factual.  
- `python Cand_Gene_MutGene_Pipeline.py --files ~/TS0096_Dominant_test.tsv --segpat ~/TS0096.reflist --anno annotation_hg19_testTS0096.vcf --genetol GeneTolerance_TS0096test.txt --disease Disease_assoc_TS0096test.txt TS_disease_keywords.txt --genes Gene_List_TS0096test.txt Gene_List --gtex GTEx_median_tpm_TS0096test.gct --output .`  
-
+Not every file has relevant or any information on the genes in the list, so there will be some genes that have the message **No Gene Found** or will have a **.**    
+The command is run where the python script is and the other files are in the users default directory.  
+ `python Cand_Gene_MutGene_Pipeline.py --files ~/TS0096_Dominant_test.tsv --segpat ~/TS0096.reflist --anno ~/annotation_hg19_testTS0096.vcf --genetol ~/GeneTolerance_TS0096test.txt --disease ~/Disease_assoc_TS0096test.txt ~/TS_disease_keywords.txt --genes ~/Gene_List_TS0096test.txt Gene_List --gtex ~/GTEx_median_tpm_TS0096test.gct --output .`  
+ 
+ The output of this command can be found in the  **TS0096_Dominant_test_segpat_annotated_gene_tolerance_disease_assoc_tissue_expression_Gene_List** file.  
  
  
